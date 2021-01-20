@@ -1,5 +1,11 @@
+import Signup from './Signup';
+
 function App() {
-  return "Hello world";
+  return (
+    <div className="flex justify-center items-center h-screen">
+      <Signup />
+    </div>
+  );
 }
 
 export default App;
