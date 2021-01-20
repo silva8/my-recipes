@@ -1,6 +1,9 @@
 import React, { useRef } from 'react';
+import { useAuth } from '../context/AuthContext';
 
 export default function Signup() {
+    const { currentUser, signinWithGoogle } = useAuth();
+    
     const nameRef = useRef();
     const emailRef = useRef();
     const passwordRef = useRef();
@@ -11,7 +14,9 @@ export default function Signup() {
                 <div className="flex flex-col items-center justify-around h-4/5">
                     <div className="flex flex-col items-center mb-2">
                         <h2 className="text-center text-2xl my-4">Create Account</h2>
-                        <img className="w-8 h-8 mb-4" src="images/google-plus.png" />
+                        <a onClick={signinWithGoogle}>
+                            <img className="w-8 h-8 mb-4" src="images/google-plus.png" />
+                        </a>
                         <div className="text-gray-400">Or use your email</div>
                     </div>
                     <form>
