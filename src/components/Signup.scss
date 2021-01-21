@@ -1,0 +1,26 @@
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    max-width: 24rem;
+    border-width: 2px;
+    border-color: rgba(209, 213, 219, 1);
+    border-radius: 0.25rem;
+
+    .signup-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 80%;
+
+        .signup-header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 0.5rem;
+        }
+    }
+}
